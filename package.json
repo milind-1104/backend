@@ -1,0 +1,24 @@
+{
+  "name": "trustnet-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@ceramicnetwork/http-client": "^2.0.0",
+    "@glazed/did-datastore": "^0.3.2",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dids": "^5.0.3",
+    "dotenv": "^16.5.0",
+    "ethers": "5.7.2",
+    "express": "^4.17.1",
+    "form-data": "^4.0.3",
+    "key-did-provider-ed25519": "^4.0.2",
+    "key-did-resolver": "^4.0.0",
+    "mongoose": "^6.0.0",
+    "snarkjs": "^0.7.5",
+    "uint8arrays": "^5.1.0"
+  }
+}

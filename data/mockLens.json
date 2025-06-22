@@ -1,0 +1,15 @@
+[
+  { "from": "0xA1", "to": "0xB2", "content": "Solid co-worker at DAO1." },
+  { "from": "0xB2", "to": "0xA1", "content": "Technically brilliant. A great dev." },
+  { "from": "0xC3", "to": "0xA1", "content": "Always helpful and responsive." },
+  { "from": "0xD4", "to": "0xA1", "content": "Taught me a lot on ProtocolX." },
+  { "from": "0xF6", "to": "0xB2", "content": "Insightful advisor for DAO2." },
+  { "from": "0xGURU", "to": "0xA1", "content": "Top 1% engineer." },
+  { "from": "0xGURU", "to": "0xF6", "content": "Visionary founder." },
+  { "from": "0xGURU", "to": "0xC3", "content": "Excellent community builder." },
+  { "from": "0xA1", "to": "0xGURU", "content": "Honored to be endorsed by them." },
+  { "from": "0xB2", "to": "0xGURU", "content": "A true leader in the space." },
+  { "from": "0xF6", "to": "0xGURU", "content": "Their advice is invaluable." },
+  { "from": "0xE5", "to": "0xD4", "content": "Creative and reliable designer." },
+  { "from": "0xD4", "to": "0xE5", "content": "Great eye for detail." }
+]

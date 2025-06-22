@@ -1,0 +1,12 @@
+[
+    { "contributor": "0xA1", "project": "DAO1", "role": "developer", "cid": "" },
+    { "contributor": "0xB2", "project": "DAO1", "role": "developer", "cid": "" },
+    { "contributor": "0xC3", "project": "DAO1", "role": "community_manager", "cid": "" },
+    { "contributor": "0xA1", "project": "ProtocolX", "role": "lead_developer", "cid": "" },
+    { "contributor": "0xD4", "project": "ProtocolX", "role": "developer", "cid": "" },
+    { "contributor": "0xE5", "project": "ProtocolX", "role": "designer", "cid": "" },
+    { "contributor": "0xB2", "project": "DAO2", "role": "advisor", "cid": "" },
+    { "contributor": "0xF6", "project": "DAO2", "role": "founder", "cid": "" },
+    { "contributor": "0GURU", "project": "DAO1", "role": "advisor", "cid": "" },
+    { "contributor": "0GURU", "project": "ProtocolX", "role": "investor", "cid": "" }
+  ]
