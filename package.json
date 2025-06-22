@@ -19,8 +19,6 @@
     "key-did-resolver": "^4.0.0",
     "mongoose": "^6.0.0",
     "snarkjs": "^0.7.5",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1",
     "uint8arrays": "^5.1.0"
   }
 }
