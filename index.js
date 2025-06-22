@@ -1,4 +1,4 @@
-// File: index.js (Simplified for a stable deployment)
+// File: index.js (Final version, serving full analysis)
 
 import express from 'express';
 import cors from 'cors';
@@ -14,20 +14,18 @@ import { verifierContractAddress, verifierContractAbi } from './utils/contractIn
 import 'dotenv/config';
 
 const app = express();
-
 app.use(cors());
 app.use(express.json());
 
-// Root route to confirm the server is running
 app.get('/', (req, res) => res.send('TrustNet Backend is Running!'));
 
-// Trust Score endpoint
 app.get('/trust-score/:address', async (req, res) => {
   try {
     const { address } = req.params;
     const result = await TrustScore.findOne({ address: { $regex: `^${address}$`, $options: "i" } });
     if (result) {
-      res.json({ address: result.address, score: result.score });
+      // THE CHANGE IS HERE: Return the entire 'result' object
+      res.json(result);
     } else {
       res.status(404).json({ error: "Score not found for this address." });
     }
@@ -37,7 +35,6 @@ app.get('/trust-score/:address', async (req, res) => {
   }
 });
 
-// ZK Verification endpoint
 app.post('/verify-endorsement', async (req, res) => {
   try {
     const { a, b } = req.body;
@@ -62,7 +59,6 @@ app.post('/verify-endorsement', async (req, res) => {
   }
 });
 
-// Connect to DB and start server for Railway
 connectDB().then(() => {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
